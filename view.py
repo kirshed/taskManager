@@ -1,1 +1,6 @@
-print("hello")
+print("What would you like to do?")
+print("1. Add a new task")
+print("2. Edit an existing task")
+print("3. Delete an existing task")
+print("4. Exit")
+task = input()
