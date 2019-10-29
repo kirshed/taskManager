@@ -1,4 +1,4 @@
-from view import TasksView
+from taskView import TasksView
 from tasksModel import TasksModel
 
 

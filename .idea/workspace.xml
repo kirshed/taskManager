@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6e2b26f-e7e3-46e3-8c58-ba7511bb6e50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tasksVm.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasksVm.py" afterDir="false" />
-    </list>
+    <list default="true" id="e6e2b26f-e7e3-46e3-8c58-ba7511bb6e50" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/view.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/taskView.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
