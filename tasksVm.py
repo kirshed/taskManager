@@ -6,6 +6,7 @@ class TasksVm:
     def __init__(self, vw, mdl):
         self.view = vw
         self.model = mdl
+        # functions dictionary
         self.funcMap = dict()
         self.funcMap[1] = self.add_t
         self.funcMap[2] = self.edit_t
@@ -16,26 +17,27 @@ class TasksVm:
     # calling specified function
     def execute(self, num):
         if num > 5 or num < 1:
-            print("Not an option, please insert a number from the menu")
+            print("Not an option, please enter a number from the menu")
         else:
+            # calling requested function
             self.funcMap.get(num)()
         # recalling execute
         newNum = int(self.view.print_view())
         self.execute(newNum)
     # adding task
     def add_t(self):
-        print("Please input the task you would like to add:")
+        print("Please enter the task you would like to add:")
         task = input()
         id = self.model.add_task(task)
         print("task", id, "added")
 
     # editing existing task if exists
     def edit_t(self):
-        print("Please input the task id you would like to edit:")
+        print("Please enter the task id you would like to edit:")
         id = int(input())
         # checking if id exists
         if self.model.get_task(id):
-            print("please input the edited task:")
+            print("please enter the edited task:")
             edited = input()
             self.model.edit_task(id, edited)
             print("task", id, "edited")
@@ -44,7 +46,7 @@ class TasksVm:
 
     # getting specified task
     def get_t(self):
-        print("Please input the task id you would like to get:")
+        print("Please enter the task id you would like to get:")
         id = int(input())
         task = self.model.get_task(id)
         if task:
@@ -54,7 +56,7 @@ class TasksVm:
 
     # removing specified task
     def remove_t(self):
-        print("Please input the task id you would like to remove:")
+        print("Please enter the task id you would like to remove:")
         id = int(input())
         if self.model.remove_task(id):
             print("task", id, "was deleted")
