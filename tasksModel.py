@@ -1,13 +1,13 @@
-class TaskModel:
+class TasksModel:
     def __init__(self):
         self.tasks = dict()
-        self.size = 0
+        self.new_id = 0
 
     # adding new task to dictionary
     def add_task(self, task):
-        self.size += 1
-        self.tasks[self.size] = task
-        return self.size
+        self.new_id += 1
+        self.tasks[self.new_id] = task
+        return self.new_id
 
     # editing existing task in dict
     def edit_task(self, id, edited):
@@ -28,5 +28,6 @@ class TaskModel:
     def remove_task(self, id):
         if self.tasks.get(id):
             del self.tasks[id]
+            return 1
         else:
             return 0

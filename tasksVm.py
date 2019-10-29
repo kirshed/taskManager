@@ -1,5 +1,5 @@
 from view import TasksView
-from taskModel import TaskModel
+from tasksModel import TasksModel
 
 
 class TasksVm:
@@ -16,11 +16,12 @@ class TasksVm:
     # calling specified function
     def execute(self, num):
         if num > 5 or num < 1:
-            print("not an option, please insert a number from the menu")
-            # recalling execute
-            self.execute(int(input()))
-        self.funcMap.get(num)()
-
+            print("Not an option, please insert a number from the menu")
+        else:
+            self.funcMap.get(num)()
+        # recalling execute
+        newNum = int(self.view.print_view())
+        self.execute(newNum)
     # adding task
     def add_t(self):
         print("Please input the task you would like to add:")
@@ -31,18 +32,20 @@ class TasksVm:
     # editing existing task if exists
     def edit_t(self):
         print("Please input the task id you would like to edit:")
-        id = input()
-        print("please input the edited task:")
-        edited = input()
-        if self.model.edit_task(id, edited):
+        id = int(input())
+        # checking if id exists
+        if self.model.get_task(id):
+            print("please input the edited task:")
+            edited = input()
+            self.model.edit_task(id, edited)
             print("task", id, "edited")
         else:
             print("task", id, "does not exist")
 
     # getting specified task
     def get_t(self):
-        print("Please input the class id you would like to get:")
-        id = input()
+        print("Please input the task id you would like to get:")
+        id = int(input())
         task = self.model.get_task(id)
         if task:
             print("the task you requested:", task)
@@ -52,7 +55,7 @@ class TasksVm:
     # removing specified task
     def remove_t(self):
         print("Please input the task id you would like to remove:")
-        id = input()
+        id = int(input())
         if self.model.remove_task(id):
             print("task", id, "was deleted")
         else:
@@ -60,11 +63,5 @@ class TasksVm:
 
     # exiting program
     def exit_program(self):
-        return
+        exit()
 
-
-view = TasksView()
-model = TaskModel()
-vm = TasksVm(view, model)
-num = int(view.print_view())
-vm.execute(num)
