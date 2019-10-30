@@ -1,6 +1,6 @@
-from taskView import TasksView
-from tasksVm import TasksVm
-from tasksModel import TasksModel
+from task_view import TasksView
+from tasks_vm import TasksVm
+from tasks_model import TasksModel
 
 def main():
     view = TasksView()

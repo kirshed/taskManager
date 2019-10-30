@@ -1,6 +1,5 @@
-from taskView import TasksView
-from tasksModel import TasksModel
-
+from task_view import TasksView
+from tasks_model import TasksModel
 
 class TasksVm:
     def __init__(self, vw, mdl):
