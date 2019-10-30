@@ -189,8 +189,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tasks_model.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="45" />
+          <line>18</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
