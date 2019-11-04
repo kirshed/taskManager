@@ -34,11 +34,9 @@ class TasksVm:
     def edit_t(self):
         print("Please enter the task id you would like to edit:")
         id = int(input())
-        # checking if id exists
-        if self.model.get_task(id):
-            print("please enter the edited task:")
-            edited = input()
-            self.model.edit_task(id, edited)
+        print("please enter the edited task:")
+        edited = input()
+        if self.model.edit_task(id, edited):
             print("task", id, "edited")
         else:
             print("task", id, "does not exist")
