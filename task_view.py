@@ -8,5 +8,6 @@ class TasksView:
         print("2. Edit an existing task")
         print("3. Get an existing task")
         print("4. Delete an existing task")
-        print("5. Exit")
+        print("5. Delete all tasks")
+        print("6. Exit")
         return input()
