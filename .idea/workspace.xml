@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e2b26f-e7e3-46e3-8c58-ba7511bb6e50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_vm.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_vm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +194,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tasks_model.py</url>
-          <line>59</line>
+          <line>62</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
